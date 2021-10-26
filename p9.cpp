@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 void print_array(int *&arr, int &n)
 {
@@ -15,14 +14,6 @@ void citire_vector(int *&arr, int &n)
     std::cout << "v: ";
     for (int i = 0; i < n; i++)
         std::cin >> arr[i];
-}
-
-int suma_elementelor(int *&arr, int &n, int &S)
-{
-    S = 0;
-    for (int i = 0; i < n; i++)
-        S += arr[i];
-    return S;
 }
 
 bool is_palindrome (int &n)
